@@ -2,6 +2,7 @@
 #include "t.h"
  
 static int a = 1;
+
 int f1 (void)
 {
   return a++;

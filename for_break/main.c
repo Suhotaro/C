@@ -4,43 +4,24 @@ int main()
 {
     int t = 0;
     int i = 0;
-    int j = 0;
 
-    while( t < 10)
+    for(i = 0; i < 5; i++)
     {
-        printf("t: %d\n", t);
+    	printf("i=%d\n", i);
 
-        for (i = 0; i < 5; i++)
-            printf("1 ");
-
-        printf("\n ");
-
-        for (j = 0; j < 5; j++)
+        while( t < 5)
         {
-            printf("2 ");
-            if (t == 2)
-                break;            
+        	printf("  t=%d\n", t);
+
+        	if (i >= 3)
+        		break;
+
+        	t++;
         }
 
-        printf("\n\n");
-
-        t++;
+        t = 0;
     }
 
-
-    for (i = 0; i < 5; i++)
-    {
-        printf("%d ", i);
-        printf("\n ");
-
-        for (j = 0; j < 5; j++)
-        {
-            printf("%d ", j);
-            if (j == 3)
-                break;
-        }
-       printf("\n ");
-    }
-           
+    return 0;
 }
 
