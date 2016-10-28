@@ -9,7 +9,9 @@ int main()
     tmp = (tmp == 1 ? 5: 0);
     printf("%d\n", tmp);
 
-    tmp = (tmp == 1 ? 5: 0);
+    tmp = 4;
+
+    tmp = (tmp == 4 ?: 0);
     printf("%d\n", tmp);
 
     return 0;
