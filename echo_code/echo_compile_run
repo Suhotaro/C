@@ -1,0 +1,1 @@
+echo 'int main () { return 5; }' | gcc -x c -o test -&& ./test
