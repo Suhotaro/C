@@ -3,7 +3,8 @@
 
 int main()
 {
-    int a = sizeof int;
+    int *b;
+    int a = sizeof *b;
 
     printf("--> %d\n", a);
 
